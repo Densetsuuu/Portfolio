@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap");
+
+div.presentation {
+  padding-top: 5%;
+  height: 35rem;
+  font-family: 'Saira Condensed', sans-serif;
+  display: flex;
+}
+
+div.presentation-1 {
+  padding-top: 50px;
+  padding-left: 20%;
+  flex: 2;
+}
+
+div.presentation-placeholder {
+  padding-right: 200px;
+  flex: 1;
+}
+
+div.presentation-placeholder img {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  clip-path: polygon(86% 0, 100% 0, 66% 100%, 50% 100%);
+  transition: 1s ease;
+}
+
+div.presentation-placeholder:hover img {
+  left: 60%;
+  clip-path: polygon(0 0, 61% 0, 100% 100%, 39% 100%);
+}
+
+div.presentation h2.think {
+  font-size: 40px;
+}
+
+div.presentation h2 {
+  font-size: 30px;
+  color: var(--secondary-skills-color);
+}
+
+div.presentation h2 {
+  margin-top: 6%;
+}
+
+div.presentation h3 {
+  font-size: 25px;
+  color: var(--primary-skills-color);
+}
+
+div.presentation h3 a {
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+div.mouse-animation {
+  font-family: 'Saira Condensed', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 30%;
+  width: 40%;
+}
+
+div.mouse-animation h1 {
+  margin-right: 2%;
+}
+
+div.mouse-animation h1 span {
+  color: var(--theme-color);
+}
+
+div.outer-skills {
+  background:#374A67;
+  width: 100%;
+  height: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 450px;
+  margin-top: 250px;
+  padding-bottom: 300px;
+}
+
+div.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 100%;
+  height: 17rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 30px;
+}
+
+div.skills div div {
+  display: flex;
+  width: 80%;
+  height: 5px;
+  overflow: hidden;
+}
+
+div.skills div span {
+  display: block;
+  height: 5px;
+  background: var(--secondary-skills-color);
+  border-radius: 10px;
+}
+
+div.skills div span.disabled {
+  background: #3c6382;
+}
+
+div.skills div[class*="-skill"] {
+  color: var(--primary-skills-color);
+  padding: 15px 50px;
+  padding-left: 75px;
+}
+
+div{
+  min-width: 200px;
+}
+
+div.skills div[class*="-skill"]:hover {
+  color: var(--theme-color);
+}
+
+div.skills div[class*="-skill"]:hover span {
+  background: var(--theme-color);
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (max-width: 1000px) {
+  div.presentation-placeholder img {
+    top: 17%;
+  }
+  
+  div.presentation div.presentation-1 {
+   padding-left: 10%;
+ }
+
+  div.presentation {
+    flex-direction: column;
+    padding-top: 16%;
+  }
+
+  div.presentation {
+  text-justify:distribute;
+   font-size: 25px;
+ }
+
+ div.mouse-animation {
+   display: none;
+ }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+}

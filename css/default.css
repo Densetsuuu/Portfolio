@@ -1,0 +1,23 @@
+/*-----------------------------------
+        CSS reset
+-----------------------------------*/
+html {
+    scrollbar-width: none;
+}
+    
+body {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
+    min-width: 600px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
